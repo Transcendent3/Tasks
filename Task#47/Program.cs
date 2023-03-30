@@ -7,9 +7,9 @@ m = 3, n = 4.
 
 double[,] a = new double[3, 4];
 
-for (int i = 0; i < 3; i++)
+for (int i = 0; i < a.GetLength(0); i++)
 {
-    for (int j = 0; j < 4; j++)
+    for (int j = 0; j < a.GetLength(1); j++)
     {
         a[i, j] = (new Random().NextDouble() * new Random().Next(-100, 100));
         Console.Write("{0,7:F2}", a[i, j]);
