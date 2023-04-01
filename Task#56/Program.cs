@@ -18,7 +18,6 @@ for (int i = 0; i < array.GetLength(0); i++)
     {
         array[i, j] = new Random().Next(0, 100);
         Console.Write($"{array[i, j],3}");
-        sum += array[i, j];
     }
     Console.WriteLine();
 }
